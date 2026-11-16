@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/plantuml-server?utm_medium=integration&utm_source=button&utm_campaign=plantuml-server)
+
 # PlantUML Server on Railway
 
 This repo packages the official [PlantUML Server](https://github.com/plantuml/plantuml-server) image for one-click deployment on [Railway](https://railway.com).
