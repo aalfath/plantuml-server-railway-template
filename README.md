@@ -12,7 +12,7 @@ PlantUML Server turns plain-text diagram descriptions (sequence, class, activity
 
 One stateless service with a public Railway domain. No database and no volume: a diagram's source is encoded in its URL, so nothing is stored on the server.
 
-The wrapper `Dockerfile` only adds one thing to the upstream image: Jetty listens on Railway's `PORT` (default `8080`) instead of a fixed 8080.
+The wrapper `Dockerfile` makes two small changes to the upstream image: Jetty listens on Railway's `PORT` (default `8080`) instead of a fixed 8080, and the Jetty annotation scanner's harmless duplicate-class warnings are silenced (they flood the logs on every boot).
 
 ## Variables
 
